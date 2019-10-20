@@ -1,0 +1,50 @@
+.contact{
+	 width:100%;  
+}
+.contact .continer{
+	position: relative;
+	 display: grid;
+	 grid-template-columns:repeat(2,1fr); 
+	 padding:2em; 
+}
+.contact form{
+   padding:2em; 
+}
+.contact input[type=text],.contact select, .contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  outline: none;
+}
+
+.contact input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+  
+   width: 100%;
+}
+@media screen and (max-width: 700px){
+.contact .continer{
+   display: block;
+  }
+}

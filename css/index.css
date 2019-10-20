@@ -1,0 +1,91 @@
+.landing_page{
+	width:100%;
+	height:89vh;
+	background:url("../images/home.jpg") fixed;
+	background-size:cover;
+	background-position: center;    
+	text-align: center;
+	position: relative;
+	border-bottom:4px solid  #ff755a;
+}
+.landing_page h1{
+	padding-top:10%;
+		width:100%; 
+	text-align: center;
+  font-size:2.5em; 
+}
+
+.landing_page p{
+	 color:#989fa9; 
+  margin-bottom:1em; 
+	width:100%; 
+	font-size:1.7em; 
+}
+.landing_page div{
+	 position: absolute;
+	 width:100%;
+	 left:40%; 
+
+}
+
+ .global {
+	margin-bottom:1em; 
+	display: block;
+	 background-color:#ff755a;
+  border:none;
+  outline: none;
+  color: #fff;
+  padding:0.7em 1.4em;
+  border-radius:5px; 
+   max-width:300px; 
+   margin-bottom:0.5em; 
+
+}
+/* laptop festival*/
+.festival_laptop{
+	 width:100%;
+	 padding: 3em;
+	 color: #a5a7a9; 
+	 background-color: #fff;
+
+}
+.festival_laptop h2{
+	 text-align: center;
+}
+.laptop{
+	display: grid;
+	 grid-template-columns:repeat(1,1fr 1fr); 
+	 width: 100%;
+	 margin-top:2em; 
+}
+.register{
+	margin-top:2em;
+    text-align: center;
+	 
+}
+
+.register h3{
+	margin-bottom:1em;
+	color: #111;
+	font-size:2em;  
+}
+.register p{
+	 margin-bottom:1em; 
+}
+.register a{
+	 max-width:350px;
+	 margin:auto;
+	 margin-bottom: 1em;  
+}
+
+.festival_laptop img{
+	 max-width:100%; 
+}
+@media screen and (max-width: 800px) {
+.festival_laptop{
+  padding:1em; 
+ }
+   .laptop{
+       display: block;
+    }
+}
