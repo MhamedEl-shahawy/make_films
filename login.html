@@ -22,14 +22,9 @@
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
       <ul class="nav-list">
         <li>
-          <a href="#">Home</a>
+          <a href="home.html">Home</a>
         </li>
-        <li>
-          <a href="profile.html">Profile</a>
-        </li>
-        <li>
-          <a href="#!">Submit Afilm</a>
-        </li>
+       
         <li>
           <a href="#!">Map</a>
 	    <ul class="nav-dropdown">
@@ -39,32 +34,11 @@
             <li>
               <a href="#">Festival</a>
             </li>
-      
+             
           </ul>
         </li>
         <li>
-          <a href="myfilm.html">My Films</a>
-        </li>
-         <li>
-          <a href="contact.html">Contact</a>
-        </li>
-       <li>
-          <a href="#">Bahaa Gamal</a>
-          <ul class="nav-dropdown">
-             <li>
-              <a href="home.html"><i class="fas fa-home"></i> <span> Home</span></a>
-            </li>
-            <li>
-              <a href="profile.html"><i class="fas fa-user-alt"></i> <span> My Profile</span></a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-edit"></i> <span> Edit Profile</span></a>
-            </li>
-             <li>
-              <a href="myfilm.html"><i class="fas fa-film"></i> <span> My Films</span></a>
-            </li>
-             <li>
-              <a href="#"><i class="fas fa-user-alt"></i> <span> Log Out</span></a>
+              <a href="contact.html">Contact</a>
             </li>
           </ul>
         </li>
@@ -74,7 +48,51 @@
 </section>
 <!-- start login -->
 <section class="login">
+  <div>
+     <h3>Log In</h3>
+     <div class="form">
+       <span><i class="fas fa-user-alt"></i> </span>
+       <input type="email" name="" placeholder="UserName">
+     </div>
+      <div class="form">
+       <span><i class="fas fa-unlock"></i> </span>
+       <input type="password" name="" placeholder="Password">
+     </div>
+     <div><a href="home.html" class="global"><span><i class="fas fa-sign-out-alt"></i></span> Log In</a></div>
+     <br>
+     <div><a class="forget" href="#popup1">Forget Password</a></div>
+     <div><p>Don't have an account?</p></div>
+     <br>
+     <div>
+      <a href="signfilm.html" class="global btn_block">SIGN UP AS FILM MAKER</a>
+      <a  href="#popup2" class="global btn_block">SIGN UP AS FESTIVAL</a>
+    </div>
+ 
 
+<div id="popup1" class="overlay">
+  <div class="popup">
+    <h2>Enter Your Email</h2>
+    <a class="close" href="#">&times;</a>
+    <div class="content">
+      <input type="email" name="" placeholder="Email">
+      <div><a href="home.html" ><span><i class="fas fa-paper-plane"></i></span> Send</a></div>
+      <br>
+    </div>
+  </div>
+</div>
+
+<div id="popup2" class="overlay">
+  <div class="popup">
+   
+    <a class="close" href="#">&times;</a>
+    <div class="content">
+    <p>Just to make sure you are a real festival .<br>
+      Please contact us at <span class="marker">info@iamafilm.com</span> to create your account</p>
+      <br>
+    </div>
+  </div>
+</div>
+  </div>
 </section>
 <!-- start footer -->
 <footer>

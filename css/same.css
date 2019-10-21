@@ -23,7 +23,7 @@ body {
   height: 77px;
   background: #fff;
   width:100%;
-  z-index:999;  
+  z-index:9999;  
 }
  
 .brand {

@@ -6,11 +6,153 @@
 	 background:url("../images/testimonial-bg.jpg");
 	 background-position: center;
 	 background-size: cover;  
+	 text-align: center;
+}
+.login h3{
+	font-size:2em;
+	color:#fff;  
+}
+.login .form{
+	 margin-top:1em;
+	 margin-bottom:1em;  
+}
+.login .form input{
+	width:350px;
+	padding:1em 0.4em;  
+	border:2px solid #666; 
+}
+.login .form input::placeholder{
+	 font-size:1.3em; 
+}
+.login .form span{
+     background-color:#fff; 
+	 padding:0.7em 0.5em;
+	 text-align: center;  
+	 margin-right: 0.2em; 
+}
+.login .global{
+
+	 background-color:#ff755a;
+  border:none;
+  outline: none;
+  color: #fff;
+  padding:0.7em 1.4em;
+  border-radius:5px; 
+   
+   margin-bottom:1.5em; 
+}
+.forget {
+	color:#fff;
 }
 
+
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 60%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+   max-height: 30%;
+  overflow: auto;
+}
+#popup2 .content{
+   margin-top:2em; 
+   font-size:1.2em; 
+}
+.marker{
+   color: #ff755a;
+}
+.content input{
+	 margin-top:2em;
+	 width:70%;
+	 padding:1em 0.7em;  
+	 outline: none;  
+   margin-bottom:2em; 
+
+
+}
+.content input::placeholder{
+	font-size:1.5em; 
+}
+.content a{
+
+	 background-color:#ff755a;
+  border:none;
+  outline: none;
+  color: #fff;
+  padding:0.7em 1.4em;
+  border-radius:5px; 
+   
+  
+
+}
+
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
 
 footer{
-
    margin-top:0em;  
 }
+@media screen and (max-width: 550px){
 
+.btn_block{
+	 display: block;
+}
+.popup {
+  width:100%; 
+}
+}
+
+@media screen and (max-width: 450px){
+  .login .form input{
+     width:250px; 
+  }
+}

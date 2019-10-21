@@ -1,12 +1,19 @@
 .landing_page{
 	width:100%;
-	height:89vh;
+   height:80vh; 
 	background:url("../images/home.jpg") fixed;
 	background-size:cover;
 	background-position: center;    
 	text-align: center;
-	position: relative;
 	border-bottom:4px solid  #ff755a;
+
+}
+.landing_page .container{
+   position: relative;
+   top:0; 
+   width:100%;  
+   height:100%;
+  
 }
 .landing_page h1{
 	padding-top:10%;
@@ -21,10 +28,10 @@
 	width:100%; 
 	font-size:1.7em; 
 }
-.landing_page div{
-	 position: absolute;
+.landing_page .container div{
 	 width:100%;
-	 left:40%; 
+ 
+	margin: auto;
 
 }
 
@@ -37,7 +44,8 @@
   color: #fff;
   padding:0.7em 1.4em;
   border-radius:5px; 
-   max-width:300px; 
+   width:300px; 
+  margin:auto; 
    margin-bottom:0.5em; 
 
 }
@@ -81,11 +89,62 @@
 .festival_laptop img{
 	 max-width:100%; 
 }
+/* start festivals_logo */
+.festivals_logo{
+	 width:100%;
+	 text-align: center;
+	 padding:2em;
+	 color:#fff;   
+}
+.festivals_logo div{
+	 margin-top:2em; 
+	 margin-bottom:2em; 
+
+}
+.festivals_logo  .gallary{
+	         background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 0 .5em;
+
+}
+
+.platform{
+	 width:100%; 	 
+	background:url("../images/indiehome_new_home_background_opt.jpg") fixed;
+	background-size:cover;
+	background-position: center; 
+}
+.platform p{
+	 font-size:1.5em;
+	 color:#fff;  
+}
+.platform img{
+	 width:80%; 
+}
+footer{
+	 margin-top:0; 
+}
 @media screen and (max-width: 800px) {
 .festival_laptop{
   padding:1em; 
+ }
+	.landing_page .container{
+    padding:0.2em; 
  }
    .laptop{
        display: block;
     }
 }
+
+@media screen and (max-width: 1100px) {
+	.landing_page .container{
+   position: absolute;
+   top:30%;
+    padding:0.5em; 
+ }
+}
+
