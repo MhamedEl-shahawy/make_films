@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>I am a film | Submit Your Short Movie</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+   <link rel="stylesheet" type="text/css" href="css/same.css">
+	 <link rel="stylesheet" type="text/css" href="css/add.css">
+    
+
+</head>
+<body>
+
+  <section class="nav-bar">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="#"><img src="images/logo.png"></a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+        <li>
+          <a href="profile.html">Profile</a>
+        </li>
+        <li>
+          <a href="#!">Submit Afilm</a>
+        </li>
+        <li>
+          <a href="#!">Map</a>
+	    <ul class="nav-dropdown">
+            <li>
+              <a href="#">Film Maker</a>
+            </li>
+            <li>
+              <a href="#">Festival</a>
+            </li>
+      
+          </ul>
+        </li>
+        <li>
+          <a href="myfilm.html">My Films</a>
+        </li>
+         <li>
+          <a href="#">Contact</a>
+        </li>
+       <li>
+          <a href="#">Bahaa Gamal</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="home.html"><i class="fas fa-home"></i> <span> Home</span></a>
+            </li>
+            <li>
+              <a href="profile.html"><i class="fas fa-user-alt"></i> <span> My Profile</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-edit"></i> <span> Edit Profile</span></a>
+            </li>
+             <li>
+              <a href="myfilm.html"><i class="fas fa-film"></i> <span> My Films</span></a>
+            </li>
+             <li>
+              <a href="#"><i class="fas fa-user-alt"></i> <span> Log Out</span></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+<!-- start add film -->
+<section class="add_film">
+   <div class="info">
+       <div class="info_selector">
+          <div>
+             <ul class="selector">
+                <li><a  class="tablinks" onclick="openCity(event, 'bio')">GENERAL</a></li>
+                <li><a  class="tablinks" onclick="openCity(event, 'contact')"> Production & Credits </a></li>
+                <li><a class="tablinks" onclick="openCity(event, 'film')"> Film Materials </a></li>
+                <li><a class="tablinks" onclick="openCity(event, 'promotion')"> Promotion</a></li>
+                <li><a class="tablinks" onclick="openCity(event, 'selections')">Selections & Awards </a></li>
+             </ul>
+          </div>
+          <div class="show_info tabcontent show_defualt"  id="bio" >
+             <div>
+               <label for="txt_original">Original Title: <span>*</span></label>
+               <input type="text" name="txt_original">
+             </div>
+             <div>
+               <label for="txt_English">English Title: <span>*</span></label>
+               <input type="text" name="txt_English">
+             </div>
+             <div>
+               <label for="txt_Username">Film Username: <span>*</span></label>
+               <input type="text" name="txt_Username">
+             </div>
+              <div>
+               <label for="txt_Languages">Languages: <span>*</span></label>
+               <input type="text" name="txt_Languages">
+             </div>
+              <div>
+               <label for="txt_Subtitles">Subtitles (Languages): <span>*</span></label>
+               <input type="text" name="txt_Subtitles">
+             </div>
+              <div>
+               <label for="txt_Duration">Duration: <span>*</span></label>
+               <input type="text" name="txt_Duration">
+             </div>
+              <div>
+               <label for="txt_School">Film School: <span>*</span></label>
+               <input type="text" name="txt_School">
+             </div>
+              <div>
+               <label for="txt_Genres">Genres: <span>*</span></label>
+               <input type="text" name="txt_Genres">
+             </div>
+              <div>
+               <label for="txt_Country">Country of Production: <span>*</span></label>
+               <input type="text" name="txt_Country">
+             </div>
+                <div>
+                <label for="txt_message">Short Synopsis (original language):</label>
+                <textarea id="message" name="message" placeholder="Write About Your Biography" ></textarea>
+                </div>
+               <div>
+               <label for="txt_Synopsis">Long Synopsis (original language):</label>
+                <textarea id="Synopsis" name="Synopsis" placeholder="Write About Your Biography" ></textarea>
+             </div>
+              <div>
+               <label for="txt_Short">Short Synopsis (English): <span>*</span></label>
+                <textarea id="Short" name="Short" placeholder="Write About Your Biography" ></textarea>
+             </div>
+              <div>
+               <label for="txt_Long">Long Synopsis (English): </label>
+                <textarea id="Long" name="Long" placeholder="Write About Your Biography" ></textarea>
+             </div>
+              <div>
+               <label for="txt_film">Film Link: <span>*</span></label>
+               <input type="text" name="txt_film">
+             </div>
+              <div>
+               <label for="txt_password">Film Password: <span>*</span></label>
+               <input type="text" name="txt_password">
+             </div>
+             <a href="#" class="global">Save & Contine</a>
+          </div>
+          <!-- 2 -->
+           <div class="show_info tabcontent show_defualt"  id="promotion" >
+             <div>
+               <label for="txt_url">Website URL: </label>
+               <input type="text" name="txt_url">
+             </div>
+             <div>
+               <label for="txt_Facebook">Facebook Link:</label>
+               <input type="text" name="txt_Facebook">
+             </div>
+             <div>
+               <label for="txt_Twitter">Twitter Link:</label>
+               <input type="text" name="txt_Twitter">
+             </div>
+              <div>
+               <label for="txt_Instagram">Instagram Link:</label>
+               <input type="text" name="txt_Instagram">
+             </div>
+              <div>
+               <label for="txt_IMDB">IMDB Link:</label>
+               <input type="text" name="txt_IMDB">
+             </div>
+              <div>
+               <label for="txt_Trailer">Trailer Link: </label>
+               <input type="text" name="txt_Trailer">
+             </div>
+              
+             <a href="#" class="global">Back</a>
+                           
+             <a href="#" class="global">Save & Contine</a>
+          </div> 
+          
+
+     <div class="show_info tabcontent show_defualt"  id="selections" >
+             
+                <div>
+                <label for="txt_Awards">Awards:</label>
+                <textarea id="message" name="Awards" placeholder="Write About Your Biography" ></textarea>
+                </div>
+               <div>
+               <label for="txt_Selections">Selections:</label>
+                <textarea id="Selections" name="Selections" placeholder="Write About Your Biography" ></textarea>
+             </div>
+           
+             <a href="#" class="global">Back</a>           
+             <a href="#" class="global">Save & Contine</a>
+          </div> 
+
+  <div  class="id tabcontent" id="id"> 
+      <div class="container">
+      <div class="imag"></div>
+      <div class="text-container">
+         <span class="top"></span>
+         <h1>Bahaa Elgamal</h1>
+         <p>Director & Editor</p>
+         <p><span> COUNTRY: </span> Egypt</p>
+         <p><span> LIVES IN: </span> Cairo</p>
+         <p><span> BIRTHDATE : </span> 1-9-1990</p>
+         <p><span>Enail: </span>Bahaaelgamalcontact@Gmail.Com</p>
+
+   <div class="social">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+
+      </div>
+        
+      </div>
+   </div>
+</div>
+  </div>
+   <div class="activement tabcontent" id="activement">
+        <div>
+             <h4>Awards</h4>
+              <p>for my window</p> 
+              <p>
+                2nd best documentary – 12 months film festival<br>Laurel of achievement – Cinema Grand Prix
+              </p>
+          </div>
+          <div>
+             <h4>Achievements</h4>
+             <p>for six</p>
+              <ul>
+                 <li>6th Tangier International Film Festival-Morocco 2013 (Best screenplay)</li>
+                 <li>9th Art Deco Film Festival Sau Paulo-Brazil 2013 (Best Film)</li>
+                 <li>9th Casablanca International Short Film Festival-Morocco 2013 (Grand prize)</li>
+                 <li>10th Naoussa International Film Festival-Greece 2013 (Naoussa Award)</li>
+                 <li>presented by students of the local schools and universities</li>
+                 <li>32nd Alexandria International Film Festival-Egypt (Special Mention) 2013</li>
+              </ul>
+          </div>
+   </div>
+       </div>
+   </div>
+</section>
+</section>
+<!-- start footer -->
+<footer>
+   <div class="addreas">
+      <div>
+         <p>138 Tahrir Street, Dokki, Giza, Egypt | 00201222848061 | <a href="mailto:info@iamafilm.com"> info@iamafilm.com</a></p>
+         <hr>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          
+         <a href="#"><i class="fab fa-facebook-f"></i></a>
+      
+      </div>
+   </div>
+   <div class="end">
+       <p>© Copyrights. I am a film All Rights Reserved. Created by Root Cave.</p>
+       
+
+       <div>
+          <a href="#">General Terms and Conditions</a>
+          <a href="#">Privacy</a>
+          <a href="#">Payment and Refunding</a>
+          <a href="#">About</a>
+       </div>
+   </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script  src="js/pluign.js"></script>
+ <script type="text/javascript">
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+    </script>
+</body>
+</html>
