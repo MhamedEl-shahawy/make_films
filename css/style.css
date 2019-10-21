@@ -63,7 +63,7 @@
    font-family: sans-serif; 
    margin-bottom:0.5em; 
 }
-.join a{
+.join .join_show a{
   background-color:#ff755a;
   border:none;
   outline: none;

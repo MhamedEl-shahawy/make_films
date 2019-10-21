@@ -204,6 +204,90 @@ footer  .end a{
    padding:1em; 
 }
 
+/* popup */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 60%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  color:#111; 
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+   max-height: 30%;
+  overflow: auto;
+}
+#popup2 .content{
+   margin-top:2em; 
+   font-size:1.2em; 
+}
+.marker{
+   color: #ff755a;
+}
+.content input{
+   margin-top:2em;
+   width:70%;
+   padding:1em 0.7em;  
+   outline: none;  
+   margin-bottom:2em; 
+
+
+}
+.content input::placeholder{
+  font-size:1.5em; 
+}
+.content a{
+
+   background-color:#ff755a;
+  border:none;
+  outline: none;
+  color: #fff;
+  padding:0.7em 1.4em;
+  border-radius:5px; 
+   
+  
+
+}
+
+
+
 /* media */
 /* start media query*/ 
 @media only screen and (max-width: 798px) {
@@ -251,4 +335,13 @@ footer  .end a{
      padding:0.2em; 
    }
 
+}
+@media screen and (max-width: 550px){
+
+.btn_block{
+   display: block;
+}
+.popup {
+  width:100%; 
+}
 }
