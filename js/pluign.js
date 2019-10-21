@@ -1,22 +1,18 @@
-$(document).ready(function () {
-  
-  'use strict';
-  
-   var c, currentScrollTop = 0,
-       navbar = $('nav');
-
-   $(window).scroll(function () {
-      var a = $(window).scrollTop();
-      var b = navbar.height();
-     
-      currentScrollTop = a;
-     
-      if (c < currentScrollTop && a > b + b) {
-        navbar.addClass("scrollUp");
-      } else if (c > currentScrollTop && !(a <= b)) {
-        navbar.removeClass("scrollUp");
-      }
-      c = currentScrollTop;
-  });
-  
-});
+(function($) { 
+  $(function() { 
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      $('.dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); 
+})(jQuery);
