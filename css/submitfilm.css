@@ -1,0 +1,164 @@
+.filter {
+	 width:100%;
+	 height: 100%;
+	 padding:2em; 
+}
+.filter .title{
+	 width:100%; 
+}
+.filter .title h2{
+	 text-align: center;
+	 color: #ff755a;
+	 font-size:3em;
+	 font-weight: bolder; 
+}
+
+.filter_container{
+  width:100%;
+  display: grid;
+  grid-template-columns:repeat(1,1fr 2fr);
+  grid-gap: 15px;  
+  margin:auto;
+
+  padding:5em; 
+}
+.filter_option{
+   background:#f7f7f7; 
+   max-height:55%;  
+
+	   padding:0.5em;  
+   padding-top: 2em;
+ 
+}
+
+.filter_option div select{
+    width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  outline: none;
+
+}
+ .global {
+   margin-top:0.5em;  
+	display: block;
+	 background: white;
+    color: #ff755a;
+	 	 text-align: center;
+  border:none;
+  outline: none;
+	 
+ 
+  padding:0.7em 1.4em;
+  
+   width:100%; 
+  margin:auto; 
+   
+}
+.form-control{
+	 display: inline-block;
+	 margin-right:2em; 
+}
+.filter_option div label {
+   margin-right:0.5em;
+   display: block;
+   color:#ff755a;
+}
+
+.films_public .show{
+	 width:100%; 
+}
+.head{
+	 width:100%;
+	 background:#ff755a;
+	 padding:1em;   
+	 	 box-shadow: 0 5px 15px rgba(0,0,0,.5);  
+	 	 margin-bottom:1em;   
+
+}
+.head h3{
+	 display: inline-block;
+}
+.head a{
+	 float:right;
+	 display: inline-block;
+	 color:#f1f1f1;
+	 font-size:1.2em;   
+}
+.movies{
+	 width:100%;
+	 height:100%;
+	 background:#fff;   
+	 padding:1em;
+	 	 box-shadow: 0 5px 15px rgba(0,0,0,.5);    
+	 	 position: relative;
+	 	 margin-bottom:1em; 
+	 	 overflow-y: scroll;
+ 
+}
+.movies::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+.movies::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.movies::-webkit-scrollbar-thumb {
+  background-color: #ff755a;
+  outline: 1px solid slategrey;
+  border-radius:10px; 
+}
+.movies div{
+	 margin-bottom:2em; 
+}
+
+.movies ul{
+	 display: inline-block;
+     line-height:35px; 
+	 position: absolute;
+	 margin-left:1em; 
+}
+.movies ul li span {
+	color: #ff755a;
+}
+
+.movies img{
+	 max-width:50%; 
+}
+
+@media screen and (max-width: 700px){
+.films_public{
+  padding:0.5em; 
+ }
+.movies{
+  min-height:80vh;
+  max-height:100vh;
+  overflow-y: scroll;
+  margin-top:1em;  
+ } 
+.movies ul{
+ display: block;
+ line-height:27px; 
+ margin-left:0.2em;
+ margin-top:0.2em; 
+
+}
+.movies img{
+	 display:block;
+	 margin:auto;  
+}
+.filter_container{
+  padding:0.5em; 
+}
+}
+@media screen and (max-width: 800px){
+	.filter_container{ 
+         display: block;   
+	  }
+
+}
